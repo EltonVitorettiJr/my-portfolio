@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@400;500;600;700&family=Outfit:wght@500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  /* Cores de Fundo */
+  --color-background: #16161E; /* Fundo principal escuro e relaxante */
+  --color-surface: #1F2335;    /* Fundo dos cards e seções destacadas */
+
+  /* Cores de Texto */
+  --color-muted: #A9B1D6;      /* Cinza/prata para os parágrafos (não cansa a vista) */
+  --color-heading: #FFFFFF;    /* Branco puro para títulos e seu nome */
+
+  /* Cores de Destaque (Ação e Hover) */
+  --color-primary: #7AA2F7;    /* Azul índigo suave para botões e links */
+  --color-secondary: #BB9AF7;  /* Roxo calmo para detalhes, bordas ou efeitos de hover */
+
+  /* Fontes */
+  --font-sans: "Inter", sans-serif;         /* Fonte padrão para a página toda */
+  --font-heading: "Outfit", sans-serif;     /* Fonte exclusiva para títulos */
+  --font-mono: "Fira Code", monospace;      /* Fonte para tags e detalhes tech */
+}
+
+body {
+  @apply min-h-screen min-w-screen bg-background text-muted;
+}
