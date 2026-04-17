@@ -6,16 +6,20 @@ import Header from "./components/header";
 import HeroSection from "./components/heroSection";
 import ProjectsSection from "./components/projectsSection";
 import SkillsSection from "./components/skillsSection";
+import VerticalBar from "./components/verticalBar";
 
 const App = () => {
   return (
     <Container>
       <Header />
-      <HeroSection />
-      <AboutSection />
-      <ProjectsSection />
-      <SkillsSection />
-      <ContactSection />
+      <VerticalBar />
+      <div className="ml-45">
+        <HeroSection />
+        <AboutSection />
+        <ProjectsSection />
+        <SkillsSection />
+        <ContactSection />
+      </div>
       <Footer />
     </Container>
   );

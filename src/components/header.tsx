@@ -1,3 +1,4 @@
+import { MenuIcon } from "lucide-react";
 import { useEffect, useState } from "react";
 
 const Header = () => {
@@ -36,39 +37,43 @@ const Header = () => {
   };
 
   return (
-    <nav
-      className="flex justify-around p-4 border-b border-secondary/15 
-       text-heading font-heading items-center"
-    >
-      <div className="flex gap-4">
-        <h3>Elton</h3>
-      </div>
-      <div className="flex gap-6">
-        <a href="#inicio" className={getLinkClass("inicio")}>
-          Início
-        </a>
-        <a href="#sobre-mim" className={getLinkClass("sobre-mim")}>
-          Sobre Mim
-        </a>
-        <a href="#projetos" className={getLinkClass("projetos")}>
-          Projetos
-        </a>
-        <a href="#habilidades" className={getLinkClass("habilidades")}>
-          Habilidades
-        </a>
-        <a href="#contato" className={getLinkClass("contato")}>
-          Contato
-        </a>
-      </div>
-      <div className="flex gap-6">
-        <button
-          type="button"
-          className="border-none rounded-md bg-primary
-        px-4 py-2 cursor-pointer hover:bg-secondary transition-colors"
-        >
-          Fale Comigo
-        </button>
-        <button type="button">Menu</button>
+    <nav className="w-full sticky top-0 z-50 bg-background/80 backdrop-blur-md">
+      <div
+        className="flex justify-around p-4 border-b border-secondary/15
+         text-heading font-heading items-center"
+      >
+        <div className="flex gap-4">
+          <h3>Elton</h3>
+        </div>
+        <div className="flex gap-6">
+          <a href="#inicio" className={getLinkClass("inicio")}>
+            Início
+          </a>
+          <a href="#sobre-mim" className={getLinkClass("sobre-mim")}>
+            Sobre Mim
+          </a>
+          <a href="#projetos" className={getLinkClass("projetos")}>
+            Projetos
+          </a>
+          <a href="#habilidades" className={getLinkClass("habilidades")}>
+            Habilidades
+          </a>
+          <a href="#contato" className={getLinkClass("contato")}>
+            Contato
+          </a>
+        </div>
+        <div className="flex gap-6">
+          <button
+            type="button"
+            className="border-none rounded-md bg-primary
+          px-4 py-2 cursor-pointer hover:bg-secondary transition-colors"
+          >
+            Fale Comigo
+          </button>
+          <button type="button">
+            <MenuIcon />
+          </button>
+        </div>
       </div>
     </nav>
   );
