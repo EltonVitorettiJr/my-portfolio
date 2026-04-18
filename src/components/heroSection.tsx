@@ -6,7 +6,7 @@ import { BsTypescript } from "react-icons/bs";
 
 const HeroSection = () => {
   return (
-    <section id="inicio" className="h-full w-full flex mt-8">
+    <section id="inicio" className="h-150 w-full flex mt-10">
       <div className="text-heading mt-18 ml-9">
         <h2 className="border-b border-heading text-xl w-fit font-heading">
           Elton Antônio Vitoretti Junior
@@ -43,15 +43,46 @@ const HeroSection = () => {
             Ver Projetos
           </a>
         </div>
-        <div className="text-muted flex items-center justify-center w-fit gap-3 mt-2 font-mono">
+        <div className="text-muted flex items-center justify-center w-fit gap-3 mt-3 font-mono">
           <p>Tech Stack: </p>
-          <FaReact size={19} className=" animate-spin-slow" />
-          <FaNode size={19} />
-          <RiTailwindCssFill size={19} />
-          <BsTypescript size={19} />
+          <a
+            href="https://react.dev/"
+            target="_blank"
+            rel="noopener"
+            className="hover:scale-110 transition-all"
+          >
+            <FaReact
+              size={19}
+              className="animate-spin-slow hover:text-[#58c4dc]"
+            />
+          </a>
+          <a
+            href="https://nodejs.org/pt-br"
+            target="_blank"
+            rel="noopener"
+            className="hover:scale-110 transition-all"
+          >
+            <FaNode size={19} className="hover:text-[#55a345]" />
+          </a>
+          <a
+            href="https://tailwindcss.com/"
+            target="_blank"
+            rel="noopener"
+            className="hover:scale-110 transition-all"
+          >
+            <RiTailwindCssFill size={19} className="hover:text-[#00bcff]" />
+          </a>
+          <a
+            href="https://www.typescriptlang.org/"
+            target="_blank"
+            rel="noopener"
+            className="hover:scale-110 transition-all"
+          >
+            <BsTypescript size={19} className="hover:text-[#3178c6]" />
+          </a>
         </div>
       </div>
-      <div className="flex justify-start items-end w-full ml-55 relative">
+      <div className="flex-1 flex justify-center items-center w-full relative">
         <img
           src={PerfilPhoto}
           alt="foto-elton"

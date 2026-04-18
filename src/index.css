@@ -20,7 +20,7 @@
   --font-mono: "Fira Code", monospace;      /* Fonte para tags e detalhes tech */
 
   /* Animação Girando Lento */
-  --animate-spin-slow: spin 12s linear infinite;
+  --animate-spin-slow: spin 13s linear infinite;
 }
 
 body {
@@ -29,4 +29,18 @@ body {
 
 button {
   @apply cursor-pointer;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px rgba(var(--glow-color, 55, 227, 89), 0.2);
+  }
+
+  100% {
+    box-shadow: 0 0 5px rgba(var(--glow-color, 55, 227, 89), 0.6);
+  }
+}
+
+.glow {
+  animation: glow 3s ease-in-out infinite alternate;
 }
