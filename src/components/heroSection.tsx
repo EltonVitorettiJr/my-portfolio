@@ -17,13 +17,13 @@ const HeroSection = () => {
         </h1>
 
         <h3 className="w-120 mt-4 text-muted text-2xl">
-          "Valorize tuas boas atitudes, pois elas só foram feitas por conta de
-          sua coragem."
+          "Valorize tuas boas atitudes, pois elas só foram feitas por
+          conta de sua coragem."
         </h3>
 
         <p className="text-muted mt-6">
-          Seja bem-vindo ao meu portfólio! Veja mais sobre mim nas seções
-          abaixo...
+          Seja bem-vindo ao meu portfólio! Veja mais sobre mim nas
+          seções abaixo...
         </p>
 
         <div className="mt-4">
@@ -70,7 +70,10 @@ const HeroSection = () => {
             rel="noopener"
             className="hover:scale-110 transition-all"
           >
-            <RiTailwindCssFill size={19} className="hover:text-[#00bcff]" />
+            <RiTailwindCssFill
+              size={19}
+              className="hover:text-[#00bcff]"
+            />
           </a>
           <a
             href="https://www.typescriptlang.org/"
@@ -78,7 +81,10 @@ const HeroSection = () => {
             rel="noopener"
             className="hover:scale-110 transition-all"
           >
-            <BsTypescript size={19} className="hover:text-[#3178c6]" />
+            <BsTypescript
+              size={19}
+              className="hover:text-[#3178c6]"
+            />
           </a>
         </div>
       </div>
@@ -86,10 +92,12 @@ const HeroSection = () => {
         <img
           src={PerfilPhoto}
           alt="foto-elton"
-          className="rounded-full w-110 drop-shadow-[0_0_30px_rgba(122,162,247,0.15)] z-10"
+          className="rounded-full object-cover z-10
+            w-full max-w-100 aspect-square 
+            drop-shadow-[0_0_30px_rgba(122,162,247,0.15)]
+            border-8 border-surface 
+            ring-4 ring-primary/80"
         />
-        <div className="rounded-full w-110 h-110 bg-primary/80 absolute" />
-        <div className="rounded-full w-107 h-107 bg-surface absolute ml-0.5" />
       </div>
     </section>
   );

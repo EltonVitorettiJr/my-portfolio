@@ -8,7 +8,10 @@ import {
 
 const SkillsSection = () => {
   return (
-    <section id="habilidades" className="my-20">
+    <section
+      id="habilidades"
+      className="my-20 border-t border-primary/20 pt-10"
+    >
       <h3 className="text-3xl text-heading font-heading border-b border-heading pb-2 mb-10 w-fit">
         Habilidades
       </h3>

@@ -2,7 +2,10 @@ import violao from "../assets/Violao.png";
 
 const AboutSection = () => {
   return (
-    <section id="sobre-mim" className="my-20">
+    <section
+      id="sobre-mim"
+      className="my-20 border-t border-primary/20 pt-10"
+    >
       <h3 className="text-3xl text-heading font-heading border-b border-white pb-2 w-fit">
         Sobre mim
       </h3>
@@ -36,7 +39,7 @@ const AboutSection = () => {
           <img
             src={violao}
             alt="foto-violao"
-            className="rotate-310 w-180"
+            className="rotate-310 w-175"
           />
         </div>
       </div>

@@ -3,7 +3,10 @@ import ProjectCard from "./projectCard";
 
 const ProjectsSection = () => {
   return (
-    <section id="projetos" className="my-20">
+    <section
+      id="projetos"
+      className="my-20 border-t border-primary/20 pt-10"
+    >
       <h3 className="text-3xl text-heading font-heading border-b pb-2 border-white w-fit">
         Projetos
       </h3>
