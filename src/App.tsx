@@ -13,7 +13,7 @@ const App = () => {
     <Container>
       <Header />
       <VerticalBar />
-      <div className="ml-45 pr-20">
+      <div className="p-10 md:ml-45 md:pr-20">
         <HeroSection />
         <AboutSection />
         <ProjectsSection />

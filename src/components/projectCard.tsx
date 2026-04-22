@@ -22,15 +22,12 @@ function ProjectCard({ project }: ProjectProps) {
     project;
 
   return (
-    // Card com borda sutil e efeito de vidro. O "group" permite animar coisas dentro dele quando o mouse passa no card inteiro.
     <div
       className="group flex flex-col border border-primary/15
      bg-surface/30 backdrop-blur-sm rounded-2xl overflow-hidden
       hover:border-primary/40 transition-all duration-300"
     >
-      {/* 1. Área da Imagem (A Vitrine) */}
       <div className="h-48 bg-muted/10 overflow-hidden relative">
-        {/* A imagem dá um leve zoom quando passa o mouse */}
         <img
           src={img.src}
           alt={img.alt}
@@ -39,18 +36,15 @@ function ProjectCard({ project }: ProjectProps) {
         />
       </div>
 
-      {/* 2. Área de Conteúdo */}
       <div className="p-6 flex flex-col grow">
         <h3 className="text-xl font-bold text-heading mb-2">
           {name}
         </h3>
 
-        {/* Descrição focada no problema resolvido e na arquitetura */}
         <p className="text-muted text-sm leading-relaxed mb-6 grow">
           {description}
         </p>
 
-        {/* 3. Tech Stack (As tags) */}
         <div className="flex flex-wrap gap-2 mb-6">
           {stack.map((tec) => (
             <span
@@ -63,7 +57,6 @@ function ProjectCard({ project }: ProjectProps) {
           ))}
         </div>
 
-        {/* 4. Ações (Links) */}
         <div
           className="flex gap-4 border-t border-primary/10
          pt-4 mt-auto"

@@ -6,8 +6,11 @@ import { BsTypescript } from "react-icons/bs";
 
 const HeroSection = () => {
   return (
-    <section id="inicio" className="h-150 w-full flex mt-10">
-      <div className="text-heading mt-18 ml-9">
+    <section
+      id="inicio"
+      className="xl:h-150 w-full flex flex-col-reverse xl:flex-row animate-fade-up mt-5"
+    >
+      <div className="text-heading md:mt-18 md:ml-9">
         <h2 className="border-b border-heading text-xl w-fit font-heading">
           Elton Antônio Vitoretti Junior
         </h2>
@@ -88,12 +91,12 @@ const HeroSection = () => {
           </a>
         </div>
       </div>
-      <div className="flex-1 flex justify-center items-center w-full relative">
+      <div className="flex justify-center items-center w-full mb-10 static lg:relative">
         <img
           src={PerfilPhoto}
           alt="foto-elton"
           className="rounded-full object-cover z-10
-            w-full max-w-100 aspect-square 
+            xl:w-full max-w-100 aspect-square w-70
             drop-shadow-[0_0_30px_rgba(122,162,247,0.15)]
             border-8 border-surface 
             ring-4 ring-primary/80"

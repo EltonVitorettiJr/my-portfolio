@@ -3,34 +3,29 @@ import { FaGithub, FaLinkedin } from "react-icons/fa6";
 
 const ContactSection = () => {
   return (
-    // Adicionei uma borda superior sutil para separar do resto do site
     <section
       id="contato"
-      className="my-20 border-t border-primary/20 pt-20"
+      className="my-20 border-t border-primary/20 pt-20 reveal"
     >
-      <div className="flex flex-col md:flex-row justify-between pr-0 md:pr-14">
-        {/* Lado Esquerdo: A Chamada para Ação */}
-        <div className="flex-1 flex flex-col justify-center">
-          <h3 className="text-4xl text-heading font-heading mb-6 w-fit">
+      <div className="flex flex-col xl:flex-row justify-between pr-0 md:pr-14 gap-8">
+        <div className="flex flex-col justify-center items-center">
+          <h3 className="text-4xl text-heading font-heading mb-6 md:w-fit text-center">
             Vamos construir{" "}
             <span className="text-primary w-fit">algo incrível?</span>
           </h3>
-          <p className="text-muted leading-relaxed mb-8 text-lg max-w-md w-fit">
+          <p className="text-muted leading-relaxed mb-8 text-justify max-w-120 text-lg">
             Estou sempre aberto a novos desafios, projetos ou
             oportunidades para agregar em uma nova equipe. Sinta-se à
             vontade para me mandar um 'Olá'!
           </p>
 
-          {/* O toque de humanização: Sua localização */}
           <div className="flex items-center gap-3 text-muted font-mono w-fit">
             <MapPin className="size-5 text-primary" />
             <span className="w-fit">São Manuel, SP - Brasil</span>
           </div>
         </div>
 
-        {/* Lado Direito: Os Cards de Conexão Rápidos */}
         <div className="flex-1 flex flex-col gap-5">
-          {/* Botão E-mail */}
           <a
             href="mailto:eltonvitorettijr@gmail.com"
             className="group flex items-center gap-6 p-5 rounded-2xl bg-surface/20 border border-primary/10 hover:border-primary/40 backdrop-blur-sm transition-all duration-300 hover:-translate-y-1"
@@ -48,7 +43,6 @@ const ContactSection = () => {
             </div>
           </a>
 
-          {/* Botão LinkedIn */}
           <a
             href="https://linkedin.com/in/elton-vitoretti-jr"
             target="_blank"
@@ -68,7 +62,6 @@ const ContactSection = () => {
             </div>
           </a>
 
-          {/* Botão GitHub */}
           <a
             href="https://github.com/EltonVitorettiJr"
             target="_blank"

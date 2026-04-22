@@ -2,7 +2,7 @@ import { ArrowDown, Grid3x3Icon } from "lucide-react";
 
 const VerticalBar = () => {
   return (
-    <aside className="flex flex-col justify-center gap-18 items-center mt-20 fixed left-5">
+    <aside className="hidden md:flex flex-col justify-center gap-18 items-center mt-20 fixed left-5">
       <Grid3x3Icon />
       <div className="flex flex-col gap-32">
         <span className="w-35 rotate-90">(14) 99846-4930</span>

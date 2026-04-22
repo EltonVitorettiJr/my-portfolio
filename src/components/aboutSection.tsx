@@ -4,14 +4,14 @@ const AboutSection = () => {
   return (
     <section
       id="sobre-mim"
-      className="my-20 border-t border-primary/20 pt-10"
+      className="my-15 border-t border-primary/20 pt-10 reveal"
     >
       <h3 className="text-3xl text-heading font-heading border-b border-white pb-2 w-fit">
         Sobre mim
       </h3>
-      <div className="flex items-center gap-12 py-10 px-navbar">
+      <div className="flex flex-col xl:flex-row xl:items-center gap-12 py-10 px-navbar">
         <div>
-          <p className="text-muted leading-relaxed mb-6 text-lg w-130 border-l-2 border-primary/40 pl-10">
+          <p className="text-muted leading-relaxed mb-6 text-lg xl:w-130 border-l-2 border-primary/40 pl-10">
             Sou o Elton, tenho 20 anos e o que começou como uma
             curiosidade explorando jogos na infância, hoje se tornou
             minha profissão. Sou graduando em Ciência da Computação
@@ -19,7 +19,7 @@ const AboutSection = () => {
             completamente apaixonado pelo ecossistema JavaScript e
             TypeScript.
           </p>
-          <p className="text-muted leading-relaxed mb-6 text-lg w-130 border-l-2 border-primary/40 pl-10">
+          <p className="text-muted leading-relaxed mb-6 text-lg xl:w-130 border-l-2 border-primary/40 pl-10">
             Meu foco é simples: transformar problemas complexos em
             interfaces intuitivas e performáticas. Combinando a base
             analítica da faculdade com a prática de mercado acelerada
@@ -27,7 +27,7 @@ const AboutSection = () => {
             ponta — desde a criação de APIs escaláveis no back-end até
             telas responsivas e acessíveis no front-end.
           </p>
-          <p className="text-muted leading-relaxed mb-6 text-lg w-130 border-l-2 border-primary/40 pl-10">
+          <p className="text-muted leading-relaxed mb-6 text-lg xl:w-130 border-l-2 border-primary/40 pl-10">
             Mais do que escrever código, busco entregar soluções com
             arquitetura limpa e organização. Atualmente, estou
             disponível para projetos freelancer e oportunidades como
@@ -35,11 +35,11 @@ const AboutSection = () => {
             resultados em uma nova equipe.
           </p>
         </div>
-        <div className="flex-1 flex justify-center items-center">
+        <div className="flex justify-center items-center">
           <img
             src={violao}
             alt="foto-violao"
-            className="rotate-310 w-175"
+            className="rotate-0 xl:rotate-310 xl:w-175 w-140"
           />
         </div>
       </div>
