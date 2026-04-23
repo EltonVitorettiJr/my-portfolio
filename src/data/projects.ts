@@ -1,8 +1,4 @@
 import type { Project } from "../components/projectCard";
-import devBills from "../assets/devbills.png";
-import itsTooDelicious from "../assets/itsTooDelicious.png";
-import medAgenda from "../assets/medAgenda.png";
-import psikoWithAOne from "../assets/psikoWithAOne.png";
 
 const projectsData: Project[] = [
   {
@@ -22,7 +18,7 @@ const projectsData: Project[] = [
     ],
     img: {
       alt: "imagem-devbills",
-      src: devBills,
+      src: "/devBills.png",
     },
   },
   {
@@ -46,7 +42,7 @@ const projectsData: Project[] = [
     ],
     img: {
       alt: "imagem-itstoodelicious",
-      src: itsTooDelicious,
+      src: "/itsTooDelicious.png",
     },
   },
   {
@@ -59,7 +55,7 @@ const projectsData: Project[] = [
     stack: ["React", "TypeScript", "TailwindCSS", "Supabase"],
     img: {
       alt: "imagem-medagenda",
-      src: medAgenda,
+      src: "/medAgenda.png",
     },
   },
   {
@@ -71,7 +67,7 @@ const projectsData: Project[] = [
     stack: ["React", "Styled-Components", "Vercel"],
     img: {
       alt: "imagem-psikowithaone",
-      src: psikoWithAOne,
+      src: "/psikoWithAOne.png",
     },
   },
 ];
