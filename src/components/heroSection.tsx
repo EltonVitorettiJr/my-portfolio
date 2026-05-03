@@ -15,11 +15,11 @@ const HeroSection = () => {
           Elton Antônio Vitoretti Junior
         </h2>
 
-        <h1 className="font-bold text-6xl w-120 mt-6 font-heading">
+        <h1 className="font-bold md:text-6xl text-4xl max-w-120 mt-6 font-heading">
           Desenvolvedor Full Stack
         </h1>
 
-        <h3 className="w-120 mt-4 text-muted text-2xl">
+        <h3 className="max-w-120 mt-4 text-muted md:text-2xl text-lg">
           "Valorize tuas boas atitudes, pois elas só foram feitas por
           conta de sua coragem."
         </h3>
@@ -29,7 +29,7 @@ const HeroSection = () => {
           seções abaixo...
         </p>
 
-        <div className="mt-4">
+        <div className="mt-4 flex">
           <button
             type="button"
             className="border-none rounded-md bg-primary font-sans
@@ -41,7 +41,7 @@ const HeroSection = () => {
             href="#projetos"
             className="border border-primary text-primary hover:bg-secondary/10
             px-4 py-2.5 rounded-md transition-colors ml-4 hover:border-secondary
-            hover:text-secondary"
+            hover:text-secondary text-center"
           >
             Ver Projetos
           </a>

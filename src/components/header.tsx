@@ -1,8 +1,13 @@
-import { MenuIcon } from "lucide-react";
 import { useEffect, useState } from "react";
+import MobileMenu from "./mobileMenu";
 
 const Header = () => {
   const [activeSection, setActiveSection] = useState("inicio");
+  const [menuIsOpen, setMenuIsOpen] = useState<boolean>(false);
+
+  const handleMenu = () => {
+    setMenuIsOpen(!menuIsOpen);
+  };
 
   useEffect(() => {
     const animationObserver = new IntersectionObserver(
@@ -53,8 +58,8 @@ const Header = () => {
         className="flex justify-between md:justify-around p-4 border-b border-secondary/15
          text-heading font-heading items-center"
       >
-        <div className="flex gap-4">
-          <h3>Elton</h3>
+        <div>
+          <h3 className="text-lg">Elton</h3>
         </div>
         <div className="hidden md:flex gap-6">
           <a href="#inicio" className={getLinkClass("inicio")}>
@@ -80,16 +85,18 @@ const Header = () => {
           <button
             type="button"
             className="border-none rounded-md bg-primary hidden md:block
-          px-4 py-2 cursor-pointer hover:bg-secondary transition-colors"
+            px-4 py-2 cursor-pointer hover:bg-secondary transition-colors"
           >
             Fale Comigo
           </button>
-          <button
-            type="button"
-            className="md:hidden w-10 h-10 flex items-center justify-center"
-          >
-            <MenuIcon size={32} />
-          </button>
+          <MobileMenu
+            menuIsOpen={menuIsOpen}
+            setMenuIsOpen={() => setMenuIsOpen}
+            activeSection={activeSection}
+            setActiveSection={() => setActiveSection}
+            handleMenu={handleMenu}
+            getLinkClass={getLinkClass}
+          />
         </div>
       </div>
     </nav>

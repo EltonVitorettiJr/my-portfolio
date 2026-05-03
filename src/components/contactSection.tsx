@@ -1,5 +1,5 @@
-import { Mail, MapPin } from "lucide-react";
-import { FaGithub, FaLinkedin } from "react-icons/fa6";
+import { MapPin } from "lucide-react";
+import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa6";
 
 const ContactSection = () => {
   return (
@@ -25,17 +25,19 @@ const ContactSection = () => {
           </div>
         </div>
 
-        <div className="flex-1 flex flex-col gap-5">
+        <div className="flex-1 flex flex-col md:ml-8 gap-5">
           <a
-            href="mailto:eltonvitorettijr@gmail.com"
+            href="https://wa.me/5514998464930?text=Ol%C3%A1%2C%20Elton!"
             className="group flex items-center gap-6 p-5 rounded-2xl bg-surface/20 border border-primary/10 hover:border-primary/40 backdrop-blur-sm transition-all duration-300 hover:-translate-y-1"
+            target="_blank"
+            rel="noopener"
           >
             <div className="bg-primary/10 p-4 rounded-xl group-hover:bg-primary/20 transition-colors">
-              <Mail className="size-7 text-primary" />
+              <FaWhatsapp className="size-7 text-primary" />
             </div>
             <div>
               <h4 className="text-heading font-bold text-lg">
-                E-mail
+                Whatsapp
               </h4>
               <span className="text-muted font-mono text-sm">
                 Me mande uma mensagem
