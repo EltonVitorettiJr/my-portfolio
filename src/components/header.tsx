@@ -82,13 +82,15 @@ const Header = () => {
           </a>
         </div>
         <div className="flex gap-6">
-          <button
-            type="button"
+          <a
+            href="https://wa.me/5514998464930?text=Ol%C3%A1%2C%20Elton!"
+            target="_blank"
+            rel="noopener"
             className="border-none rounded-md bg-primary hidden md:block
             px-4 py-2 cursor-pointer hover:bg-secondary transition-colors"
           >
             Fale Comigo
-          </button>
+          </a>
           <MobileMenu
             menuIsOpen={menuIsOpen}
             setMenuIsOpen={() => setMenuIsOpen}

@@ -30,13 +30,15 @@ const HeroSection = () => {
         </p>
 
         <div className="mt-4 flex">
-          <button
-            type="button"
+          <a
+            target="_blank"
+            href="/elton-antonio-vitoretti-junior-cv.pdf"
+            rel="noopener"
             className="border-none rounded-md bg-primary font-sans
           px-4 py-2 hover:bg-secondary transition-colors"
           >
             Meu Currículo
-          </button>
+          </a>
           <a
             href="#projetos"
             className="border border-primary text-primary hover:bg-secondary/10
