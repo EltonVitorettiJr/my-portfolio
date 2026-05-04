@@ -1,73 +1,42 @@
-# React + TypeScript + Vite
+<h1 align="center">Elton Vitoretti | Portfólio Profissional</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<h3 align="center">Vitrine de Projetos Full Stack com Design Moderno e Responsivo</h3>
 
-Currently, two official plugins are available:
+<h3 align="center"><strong>Veja o projeto em deploy! </strong><a href="https://elton-jr-portfolio.vercel.app/" target="_blank">Link</a></h3>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+<img src="https://res.cloudinary.com/dtgimo0rh/image/upload/v1777936242/celular-computador-imagem_1_wwrclc.png" alt="imagem-ilustrativa"/>
 
-## React Compiler
+# :art: Sobre o Projeto
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Este é o meu portfólio oficial, uma aplicação Front-end desenvolvida do zero para apresentar meus projetos, habilidades e trajetória como Desenvolvedor Full Stack. O grande foco deste desenvolvimento foi entregar uma experiência visual *premium*, fluida e altamente responsiva.
 
-## Expanding the ESLint configuration
+O projeto foi construído utilizando os conceitos de **Glassmorphism** (efeito de vidro fosco) e navegação inteligente através da observação de elementos na tela, garantindo que o usuário tenha um feedback visual claro de onde está navegando.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## ✨ Features Principais
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+* **Design Premium & Glassmorphism:** Interface noturna com elementos translúcidos e estilização avançada focada em UI/UX.
+* **Navegação Inteligente (Scroll Spy):** Utilização da API `IntersectionObserver` do JavaScript para destacar dinamicamente a seção ativa no menu superior de acordo com a rolagem da página.
+* **Micro-interações e Animações:** Efeitos de *fade-up* e transições suaves (`transition-colors`, `transform`) acionadas de forma otimizada para não pesar o navegador.
+* **Responsividade (Mobile-First):** Layout 100% adaptável, com menus expansíveis e reorganização de grids estruturadas via Tailwind CSS para dispositivos móveis.
+* **Código Padronizado:** Implementação do Biome como linter e formatter oficial para garantir a consistência de sintaxe e organização de imports.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+# :computer: Tecnologias Usadas
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### Front-end (Interface)
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+* **React** (Biblioteca de UI)
+* **TypeScript** (Tipagem estática e segurança de código)
+* **Tailwind CSS** (Estilização utilitária e responsiva direto no markup)
+* **Lucide React** (Pacote de ícones minimalistas)
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Ferramentas & Deploy
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+* **Vite** (Ambiente de desenvolvimento ultrarrápido e bundler)
+* **Biome** (Linter e Formatter integrado)
+* **Vercel** (Hospedagem, CI/CD e Deploy contínuo)
+
+# :bug: Melhorias e Contato
+
+Sinta-se à vontade para abrir uma *Issue* caso encontre bugs na interface ou tenha sugestões de design!
+
+<p align="center"> Feito com 💜 por <strong>Elton Vitoretti Jr</strong>.
